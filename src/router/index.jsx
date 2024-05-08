@@ -5,6 +5,7 @@ import CallbackPage from "../pages/CallbackPage";
 import ContextPage from "../pages/ContextPage";
 import RefPage from "../pages/RefPage";
 import ReducerPage from "../pages/ReducerPage";
+import LayoutEffectPage from "../pages/LayoutEffectPage";
 
 export const pages = [
   { name: "Home", path: "/", component: HomePage},
@@ -13,6 +14,7 @@ export const pages = [
   { name: "Reducers", path: "/reducer", component: ReducerPage},
   { name: "Memo", path: "/memo", component: MemoPage },
   { name: "Callback", path: "/callback", component: CallbackPage },
+  { name: "LayoutEffect", path: "/layout-effect", component: LayoutEffectPage },
   
 ];
 
