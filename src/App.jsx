@@ -5,12 +5,10 @@ import theme from "./theme";
 
 export default function App() {
   return (
-    <>
       <ThemeProvider theme={theme}>
         <AppProvider>
           <Router />
         </AppProvider>
       </ThemeProvider>
-    </>
   );
 }

@@ -1,0 +1,29 @@
+.favorite-container {
+  padding-top: 2rem;
+}
+
+.favorite-article {
+  width: 220px;
+  display: grid;
+  justify-items: center;
+  filter: blur(8px);
+  scale: .8;
+  transition: filter .3s, scale .3s;
+}
+.swiper-slide-active,
+.swiper-slide-duplicate-active {
+  scale: 1;
+  filter: blur(0);
+}
+
+.favorite-img {
+  width: 220px;
+  margin-bottom: 1.5rem;
+}
+
+.favorite-model {
+  background: var(--gradient-color);
+  padding: .5rem 1.5rem;
+  border-radius: 4rem;
+  color: var(--title-color);
+}
