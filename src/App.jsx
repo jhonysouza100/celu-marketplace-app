@@ -1,13 +1,16 @@
-import { AppProvider } from './context'
-import Router from './router';
+import { ThemeProvider } from "styled-components";
+import { AppProvider } from "./context";
+import Router from "./router";
+import theme from "./theme";
 
 export default function App() {
-  
   return (
     <>
-      <AppProvider>
-        <Router />
-      </AppProvider>
+      <ThemeProvider theme={theme}>
+        <AppProvider>
+          <Router />
+        </AppProvider>
+      </ThemeProvider>
     </>
   );
 }
