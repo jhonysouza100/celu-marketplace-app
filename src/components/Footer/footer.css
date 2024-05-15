@@ -29,10 +29,17 @@
 }
 
 .footer-link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.footer-link > * {
   color: var(--text-color);
+  margin-right: .25rem;
   transition: color .4s;
 }
-.footer-link:hover {
+.footer-link:hover > * {
   color: var(--main-color);
 }
 
@@ -67,6 +74,10 @@
 
 .footer-button {
   cursor: pointer;
+}
+
+.footer-button .button-icon {
+  color: var(--main-color);
 }
 
 .footer-social {

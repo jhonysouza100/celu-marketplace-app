@@ -8,7 +8,8 @@ const index = {
   columnText4: '+54 123 456001',
   columnText5: '@gmail.com',
   columnText6: 'Mar del Plata',
-  buttonText1: 'Recibe ofertas',
+  emailText1: 'Introduce tu Email',
+  buttonText1: 'Enviar',
 }
 
 export default index
