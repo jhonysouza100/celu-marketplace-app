@@ -1,10 +1,13 @@
-import './footer.css'
-import text from './footer.text'
-import link from './footer.link'
+import './footer.css';
+import text from './footer.text';
+import link from './footer.link';
 import { Link } from 'react-router-dom';
-import { RiFacebookCircleFill, RiInstagramFill, RiMailLine, RiMapPinLine, RiSendPlaneLine, RiWhatsappLine } from '@remixicon/react';
+import Form from './Form';
+import { RiFacebookCircleFill, RiInstagramFill, RiMailLine, RiMapPinLine, RiWhatsappLine } from '@remixicon/react';
 
 export default function Footer() {
+
+  console.log('footer rendered')
 
   return (
     <footer className="footer">
@@ -36,10 +39,9 @@ export default function Footer() {
 
           {/* FROM/INPUT */}
           <div className="footer-group">
-            <form className="footer-form" aria-label="Formulario de suscripción">
-              <input type="email" className="footer-input" placeholder={text.emailText1} aria-label="Introduce tu dirección de correo electrónico" />
-              <button className="footer-button button" aria-label="Enviar"><span>{text.buttonText1}</span> <RiSendPlaneLine className='button-icon' /></button>
-            </form>
+
+            {/* FORM */}
+            <Form />
 
             {/* SOCIAL */}
             <div className="footer-social">
