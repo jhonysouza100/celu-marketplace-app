@@ -7,7 +7,7 @@ import { RiFacebookCircleFill, RiInstagramFill, RiMailLine, RiMapPinLine, RiWhat
 
 export default function Footer() {
 
-  console.log('footer rendered')
+  console.log('component FOOTER rendered')
 
   return (
     <footer className="footer">
