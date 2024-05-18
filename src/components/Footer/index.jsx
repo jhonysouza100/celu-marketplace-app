@@ -1,9 +1,10 @@
 import './footer.css';
 import text from './footer.text';
 import link from './footer.link';
-import { Link } from 'react-router-dom';
-import Form from './Form';
+import Link from "next/link";
+// import Form from './Form';
 import { RiFacebookCircleFill, RiInstagramFill, RiMailLine, RiMapPinLine, RiWhatsappLine } from '@remixicon/react';
+
 
 export default function Footer() {
 
@@ -13,7 +14,7 @@ export default function Footer() {
     <footer className="footer">
       <div className="footer-container container grid">
         
-        <Link to={'/'} className="footer-logo">{text.sectionTitle}</Link>
+        <Link href={'/'} className="footer-logo">{text.sectionTitle}</Link>
 
         <div className="footer-data grid">
 
@@ -21,9 +22,9 @@ export default function Footer() {
           <div>
             <h3 className="footer-title">{text.columnTitle1}</h3>
             <ul className="footer-links">
-              <li className='footer-link'><Link to={'/celulares'} aria-label="Ir a la página de Celulares">{text.columnText1}</Link></li>
-              <li className="footer-link"><Link to={'/informatica'} aria-label="Ir a la página de Informática">{text.columnText2}</Link></li>
-              <li className="footer-link"><Link to={'/accesorios'} aria-label="Ir a la página de Accesorios">{text.columnText3}</Link></li>
+              <li className='footer-link'><Link href={'/celulares'} aria-label="Ir a la página de Celulares">{text.columnText1}</Link></li>
+              <li className="footer-link"><Link href={'/informatica'} aria-label="Ir a la página de Informática">{text.columnText2}</Link></li>
+              <li className="footer-link"><Link href={'/accesorios'} aria-label="Ir a la página de Accesorios">{text.columnText3}</Link></li>
             </ul>
           </div>
 
@@ -41,7 +42,7 @@ export default function Footer() {
           <div className="footer-group">
 
             {/* FORM */}
-            <Form />
+            {/* <Form /> */}
 
             {/* SOCIAL */}
             <div className="footer-social">
