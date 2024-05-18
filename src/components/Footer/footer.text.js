@@ -9,6 +9,7 @@ const index = {
   columnText5: 'someone@gmail.com',
   columnText6: 'Mar del Plata',
   emailText1: 'Introduce tu Email',
+  emailSuccessText1: 'Gracias por tu suscripción:',
   emailErrorMessage: 'Ingresa un email válido',
   buttonText1: 'Enviar',
 }

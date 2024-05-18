@@ -5,6 +5,7 @@
 :root {
   --header-height: 3.5rem;
   --main-color: hsl(23, 100%, 50%);
+  --error-color: #dc2626;
   --gradient-color: linear-gradient(90deg,
                   hsl(23, 4%, 28%) 0%,
                   hsl(23, 4%, 8%) 100%);

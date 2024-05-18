@@ -51,6 +51,7 @@
   display: grid;
   row-gap: 1rem;
   margin-bottom: 2rem;
+  position: relative;
 }
 
 .footer-input, .footer-button {
@@ -70,6 +71,20 @@
 
 .footer-input::placeholder {
   color: var(--text-color);
+}
+
+.footer-input:-webkit-autofill {
+  background-color: var(--container-color) !important; /* Cambia el color de fondo */
+  color: var(--text-color) !important; /* Cambia el color del texto */
+}
+
+.footer-input-error {
+  color: var(--error-color);
+  position: absolute;
+  top: -.75rem;
+  right: 1.5rem;
+  transform: translateY(-.5rem);
+  font-size: 0.8rem;
 }
 
 .footer-button {

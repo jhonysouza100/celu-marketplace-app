@@ -53,7 +53,7 @@ export default function Footer() {
       </div>
       
       <a href={link.developer} className="footer-copyright">© All Rights Reserved By Jhony Souza 2024.</a>
-      
+
     </footer>
   );
 
