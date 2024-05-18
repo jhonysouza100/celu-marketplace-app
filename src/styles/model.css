@@ -1,0 +1,51 @@
+.model-container {
+  padding-top: 2rem;
+  row-gap: 2.5rem;
+}
+
+.model-content {
+  position: relative;
+  justify-self: center;
+}
+
+.model-img {
+  width: 280px;
+}
+
+.model-tooltip-img {
+  width: 60px;
+}
+
+.model-tooltip-text {
+  background: var(--gradient-color);
+  padding: .25rem .75rem;
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+  font-size: var(--small-font-size);
+  border-radius: 4rem;
+  position: absolute;
+  transform: translate(60px, -40px);
+  white-space: nowrap;
+}
+
+.model-tooltip-1,
+.model-tooltip-2 {
+  transform: scaleX(-1);
+}
+.model-tooltip-1 .model-tooltip-text,
+.model-tooltip-2 .model-tooltip-text {
+  transform: translate(60px, -40px) scaleX(-1);
+}
+
+.model-tooltip {
+  position: absolute;
+}
+
+.model-tooltip-1 {top: 5rem; left: 5rem;}
+.model-tooltip-2 {top: 1rem; right: 1.5rem;}
+.model-tooltip-3 {bottom: 1.8rem; left: 3.5rem;}
+.model-tooltip-4 {bottom: 7rem; right: 5rem;}
+
+.model-button {
+  justify-self: center;
+}
