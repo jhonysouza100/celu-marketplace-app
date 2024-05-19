@@ -1,8 +1,10 @@
+"use client"
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { RiSendPlaneLine } from '@remixicon/react';
 import text from './footer.text';
+import config from '@/config';
 import { Toaster, toast } from "sonner";
 
 export default function Form() {
@@ -27,7 +29,7 @@ export default function Form() {
 
   const sendEmail = async (data) => {
     try {
-      const res = await fetch(`${import.meta.env.VITE_EMAIL_BACKEND_URL}`, {
+      const res = await fetch(`${config.EMAIL_BACKEND_URL}`, {
         method: 'POST',
         body: JSON.stringify(data),
         headers: {'Content-Type': 'application/json'}

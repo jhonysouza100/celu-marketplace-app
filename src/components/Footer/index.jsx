@@ -2,7 +2,7 @@ import './footer.css';
 import text from './footer.text';
 import link from './footer.link';
 import Link from "next/link";
-// import Form from './Form';
+import Form from './Form';
 import { RiFacebookCircleFill, RiInstagramFill, RiMailLine, RiMapPinLine, RiWhatsappLine } from '@remixicon/react';
 
 
@@ -42,7 +42,7 @@ export default function Footer() {
           <div className="footer-group">
 
             {/* FORM */}
-            {/* <Form /> */}
+            <Form />
 
             {/* SOCIAL */}
             <div className="footer-social">
