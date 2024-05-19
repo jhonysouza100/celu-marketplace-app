@@ -54,7 +54,7 @@ export default function Form() {
   return (
     <form
     onSubmit={handleSubmit( (data) => sendEmail(data))}
-      className="footer-form"
+      className="footer-form grid gap-6 gap-y-4 mb-8 relative"
       aria-label="Formulario de suscripción"
     >
       
@@ -62,16 +62,16 @@ export default function Form() {
         {...register("email")}
         id='email'
         type="text"
-        className="footer-input"
+        className="footer-input border-none outline-none w-full py-5 px-5 rounded-full bg-zinc-900 text-white placeholder-zinc-400"
         placeholder={text.emailText1}
         aria-label="Introduce tu dirección de correo electrónico"
         />
         
-        {errors.email && <label className='footer-input-error' htmlFor='email'>{errors.email.message}</label>}
+        {errors.email && <label className='footer-input-error text-red-600 text-xs absolute top-[-.75rem] right-6 translate-y-[-.5rem]' htmlFor='email'>{errors.email.message}</label>}
 
-      <button type="submit" className="footer-button button" aria-label="Enviar">
+      <button type="submit" className="footer-button button cursor-pointer" aria-label="Enviar">
         <span>{text.buttonText1}</span>
-        <RiSendPlaneLine className="button-icon" />
+        <RiSendPlaneLine className="main-color" />
       </button>
 
       <Toaster richColors />

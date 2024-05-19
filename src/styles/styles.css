@@ -1,0 +1,147 @@
+:root {
+  --header-height: 3.5rem;
+  --main-color: hsl(23, 100%, 50%);
+  --error-color: #dc2626;
+  --gradient-color: linear-gradient(90deg,
+                  hsl(23, 4%, 28%) 0%,
+                  hsl(23, 4%, 8%) 100%);
+  --title-color: hsl(0, 0%, 100%);
+  --text-color: rgb(157, 152, 149);
+  --body-color: rgb(11, 10, 9);
+  --container-color: rgb(27, 25, 24);
+  --body-font: "Poppins", sans-serif;
+  --biggest-font-size: 10rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+  --smaller-font-size: .75rem;
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+/*========== Responsive typography ==========*/
+@media screen and (min-width: 1150px) {
+  :root {
+    --biggest-font-size: 25rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
+  }
+}
+
+/* BASE */
+* {
+  /* box-sizing: border-box;
+  padding: 0;
+  margin: 0; */
+}
+html {
+  /* scroll-behavior: smooth; */
+}
+body {
+  /* font-family: var(--body-font); */
+  /* font-size: var(--normal-font-size); */
+  /* background-color: var(--body-color); */
+  /* color: var(--text-color); */
+  /* user-select: none; */
+}
+h1, h2, h3, h4 {
+  /* color: var(--title-color);
+  font-weight: var(--font-semi-bold); */
+}
+ul {
+  /* list-style: none; */
+}
+a {
+  /* text-decoration: none; */
+}
+img {
+  /* display: block; */
+  /* max-width: 100%; */
+  /* height: auto; */
+}
+
+/* REUSABLES */
+.container {
+  /* max-width: 1120px; */
+  /* margin-inline: 1.5rem; */
+}
+.grid {
+  /* display: grid; */
+  gap: 1.5rem;
+}
+.section {
+  /* padding-block: 5rem 1rem; */
+}
+.section-title {
+  /* font-size: var(--h2-font-size); */
+  /* text-align: center; */
+  /* margin-bottom: 1.5rem; */
+}
+.main {
+  /* overflow: hidden; For animation ScrollReveal */
+}
+
+/* COMPONENTS */
+.button {
+  /* background: var(--gradient-color); */
+  /* padding: .75rem 1.5rem; */
+  /* border-radius: 4rem; */
+  /* color: var(--title-color); */
+  /* font-weight: var(--font-semi-blod); */
+  /* display: inline-flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* column-gap: .5rem; */
+  /* transition: box-shadow .4s; */
+}
+.button:hover {
+  /* box-shadow:  0 12px 32px hsla(23, -100%, -50%, .12); */
+}
+.button i {
+  /* font-size: 2rem; */
+  /* font-weight: initial; */
+  /* color: var(--main-color); */
+}
+.scrollup {
+  position: fixed;
+  right: 1rem;
+  bottom: -50%;
+  background: var(--gradient-color);
+  display: inline-flex;
+  color: var(--title-color);
+  font-size: 1.25rem;
+  padding: 6px;
+  border-radius: .25rem;
+  z-index: var(--z-tooltip);
+  transition: bottom .4s, transform .4s;
+}
+.scrollup:hover {
+  transform: translateY(-.5rem);
+}
+
+.scrollup.show {
+  bottom: 3rem;
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+  /* width: .6rem; */
+  /* border-radius: .5rem; */
+  /* background-color: hsl(23, 4%, 15%); */
+}
+::-webkit-scrollbar-thumb {
+  /* border-radius: .5rem; */
+  /* background-color: hsl(23, 4%, 30%); */
+}
+::-webkit-scrollbar-thumb:hover {
+  /* background-color: hsl(23, 4%, 40%); */
+}
