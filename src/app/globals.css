@@ -33,6 +33,26 @@
     @apply text-white font-semibold;
   }
 
+  .title-color {
+    @apply text-white;
+  }
+
+  .text-color {
+    @apply text-neutral-400;
+  }
+
+  .body-color {
+    @apply bg-neutral-950;
+  }
+
+  .container-color {
+    @apply bg-neutral-800;
+  }
+
+  .placeholder-color {
+    @apply placeholder-zinc-400 text-white;
+  }
+
   img {
     @apply block max-w-full h-auto;
   }
@@ -46,11 +66,11 @@
   }
 
   .section-title {
-    @apply text-xl lg:text-2xl text-center mb-6;
+    @apply text-[1rem] text-center mb-6;
   }
 
   .footer {
-    @apply py-8 overflow-hidden lg:pb-12;
+    @apply py-8 lg:pb-12;
   }
 
   .box-shadow {

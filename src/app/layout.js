@@ -17,7 +17,7 @@ const pages = [
 export default function RootLayout({ children }) {
   return (
     <html className="scroll-smooth" lang="es">
-      <body className={`${inter.className} bg-zinc-950 text-zinc-400 select-none`}>
+      <body className={`${inter.className} body-color text-color select-none p-4`}>
         {/* <Navbar pages={pages} /> */}
         <main className="main overflow-hidden">{children}</main>
         <Footer />

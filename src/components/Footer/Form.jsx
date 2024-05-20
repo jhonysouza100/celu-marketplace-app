@@ -54,7 +54,7 @@ export default function Form() {
   return (
     <form
     onSubmit={handleSubmit( (data) => sendEmail(data))}
-      className="footer-form grid gap-y-4 mb-8 relative lg:grid-cols-2 lg:bg-neutral-800 lg:p-2 lg:rounded-full lg:w-96"
+      className="footer-form grid gap-y-4 mb-8 relative md:grid-cols-2 md:container-color md:p-1 md:rounded-full md:w-96"
       aria-label="Formulario de suscripción"
     >
       
@@ -62,7 +62,7 @@ export default function Form() {
         {...register("email")}
         id='email'
         type="text"
-        className="footer-input border-none outline-none w-full py-5 px-5 rounded-full bg-neutral-800 text-white placeholder-zinc-400"
+        className="footer-input border-none outline-none w-full py-5 px-5 rounded-full container-color"
         placeholder={text.emailText1}
         aria-label="Introduce tu dirección de correo electrónico"
         />
