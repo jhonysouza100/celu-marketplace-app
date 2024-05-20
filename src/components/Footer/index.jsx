@@ -11,14 +11,14 @@ export default function Footer() {
 
   return (
     <footer className="footer">
-      <div className="footer-container container grid gap-6 gap-y-16">
+      <div className="footer-container container grid gap-6 gap-y-16 md:grid-cols-2 md:justify-between">
         
-        <Link href={'/'} className="footer-logo text-xl font-semibold main-color">{text.sectionTitle}</Link>
+        <div className="footer-logo inline-flex text-xl font-semibold main-color">{text.sectionTitle}</div>
 
-        <div className="footer-data grid gap-6 gap-y-16 grid-cols-2">
+        <div className="footer-data grid gap-6 gap-y-16 grid-cols-2 sm:grid-cols-3 sm:gap-x-12 md:gap-x-16 xl:gap-x-24">
 
           {/* PRODUCTOS */}
-          <div>
+          <div className=''>
             <h3 className="footer-title text-lg mb-4">{text.columnTitle1}</h3>
             <ul className="footer-links grid gap-y-3">
               <li className='footer-link flex items-center justify-start transition-colors duration-300 hover:main-color'><Link href={'/celulares'} aria-label="Ir a la página de Celulares">{text.columnText1}</Link></li>
@@ -28,7 +28,7 @@ export default function Footer() {
           </div>
 
           {/* CONTACTO */}
-          <div>
+          <div className=''>
             <h3 className="footer-title text-lg mb-4">{text.columnTitle2}</h3>
             <ul className="footer-links grid gap-y-3">
               <li className="footer-link inline-flex items-center justify-start transition-colors duration-300 hover:main-color space-x-1"><RiWhatsappLine /><a href={link.whatsapp} aria-label="Enviar mensaje por WhatsApp">{text.columnText4}</a></li>
@@ -38,21 +38,22 @@ export default function Footer() {
           </div>
 
           {/* FROM/INPUT */}
-          <div className="footer-group col-span-2">
+          <div className="footer-group col-span-2 sm:grid-cols-1">
 
             {/* FORM */}
             <Form />
 
             {/* SOCIAL */}
-            <div className="footer-social flex justify-center gap-x-4">
-              <a className="footer-social-link text-white text-xl transition-colors duration-300 hover:main-color" aria-label="Perfil de Instagram" href={link.instagram}><RiInstagramFill /></a>
-              <a className="footer-social-link text-white text-xl transition-colors duration-300 hover:main-color" aria-label="Perfil de Facebook" href={link.facebook}><RiFacebookCircleFill /></a>
+            <div className="footer-social flex justify-center gap-x-4 sm:justify-start lg:gap-x-6">
+              <a className="footer-social-link text-white text-xl transition-colors duration-300 hover:main-color lg:text-2xl" aria-label="Perfil de Instagram" href={link.instagram}><RiInstagramFill /></a>
+              <a className="footer-social-link text-white text-xl transition-colors duration-300 hover:main-color lg:text-2xl" aria-label="Perfil de Facebook" href={link.facebook}><RiFacebookCircleFill /></a>
             </div>
           </div>
+
         </div>
       </div>
       
-      <a href={link.developer} className="footer-copyright block mt-20 text-sm text-center text-zinc-400">© All Rights Reserved By Jhony Souza 2024.</a>
+      <a href={link.developer} className="footer-copyright block mt-20 text-sm text-center text-zinc-400 lg:mt-28">© All Rights Reserved By Jhony Souza 2024.</a>
 
     </footer>
   );

@@ -38,19 +38,19 @@
   }
 
   .container {
-    @apply max-w-screen-lg mx-6;
+    @apply mx-4 sm:mx-6 xl:max-w-screen-lg xl:mx-auto;
   }
 
   .section {
-    @apply py-6 px-4;
+    @apply py-6 px-4 lg:py-28 lg:px-8;
   }
 
   .section-title {
-    @apply text-xl text-center mb-6;
+    @apply text-xl lg:text-2xl text-center mb-6;
   }
 
   .footer {
-    @apply py-8 overflow-hidden;
+    @apply py-8 overflow-hidden lg:pb-12;
   }
 
   .box-shadow {

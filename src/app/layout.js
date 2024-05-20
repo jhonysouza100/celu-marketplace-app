@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
     <html className="scroll-smooth" lang="es">
       <body className={`${inter.className} bg-zinc-950 text-zinc-400 select-none`}>
         {/* <Navbar pages={pages} /> */}
-        <main className="overflow-hidden">{children}</main>
+        <main className="main overflow-hidden">{children}</main>
         <Footer />
       </body>
     </html>

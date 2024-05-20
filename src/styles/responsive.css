@@ -17,7 +17,7 @@
 /* For small devices */
 @media screen and (max-width: 340px) {
   .container {
-    margin-inline: 1rem;
+    /* margin-inline: 1rem; */
   }
   .home-img {
     width: 180px;
@@ -63,14 +63,14 @@
     justify-content: center;
   }
   .footer-data {
-    grid-template-columns: repeat(3, max-content);
-    column-gap: 3rem;
+    /* grid-template-columns: repeat(3, max-content); */
+    /* column-gap: 3rem; */
   }
   .footer-group {
-    grid-column: initial;
+    /* grid-column: initial; */
   }
   .footer-social {
-    justify-content: initial;
+    /* justify-content: initial; */
   }
 }
 
@@ -91,24 +91,24 @@
     grid-template-columns: repeat(4, max-content);
   }
   .footer-container {
-    grid-template-columns: repeat(2, max-content);
-    justify-content: space-between;
+    /* grid-template-columns: repeat(2, max-content); */
+    /* justify-content: space-between; */
   }
   .footer-data {
-    column-gap: 4rem;
+    /* column-gap: 4rem; */
   }
 }
 
-/* For large devices */
+/* For large "LG" devices */
 @media screen and (min-width: 1150px) {
   .container {
-    margin-inline: auto;
+    /* margin-inline: auto; */
   }
   .section {
-    padding-block: 7rem 2rem;
+    /* padding-block: 7rem 2rem; */
   }
   .section-title {
-    font-size: var(--h1-font-size);
+    /* font-size: var(--h1-font-size); */
   }
   .nav {
     height: calc(var(--header-height) + 2rem);
@@ -218,26 +218,26 @@
     padding-bottom: 6rem;
   }
   .footer {
-    padding-bottom: 3rem;
+    /* padding-bottom: 3rem; */
   }
   .footer-data {
-    column-gap: 6rem;
+    /* column-gap: 6rem; */
   }
   .footer-form {
-    grid-template-columns: 1fr max-content;
-    background-color: var(--container-color);
-    padding: .5rem;
-    border-radius: 4rem;
-    width: 380px;
+    /* grid-template-columns: 1fr max-content; */
+    /* background-color: var(--container-color); */
+    /* padding: .5rem; */
+    /* border-radius: 4rem; */
+    /* width: 380px; */
   }
   .footer-social {
-    column-gap: 1.5rem;
+    /* column-gap: 1.5rem; */
   }
   .footer-social-link {
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
   }
   .footer-copyright {
-    margin-top: 7.5rem;
+    /* margin-top: 7.5rem; */
   }
   .scrollup {
     right: 3rem;
