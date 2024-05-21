@@ -10,7 +10,7 @@ export default function Navbar({pages}) {
 
       <ul className="nav-list flex justify-between items-center">
         {pages.map((el) => (
-          <li className='ml-2 text-sm hover:text-amber-500' key={crypto.randomUUID()}>
+          <li className='ml-2 hover:text-amber-500' key={crypto.randomUUID()}>
             <Link className="nav-link" style={{color: 'white'}} href={el.path}>{el.name}</Link>
           </li>
         ))}

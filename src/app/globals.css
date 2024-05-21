@@ -58,7 +58,7 @@
   }
 
   .container {
-    @apply mx-4 sm:mx-6 xl:max-w-screen-lg xl:mx-auto;
+    @apply mx-4 sm:mx-6 max-w-screen-lg xl:mx-auto;
   }
 
   .section {
@@ -66,7 +66,7 @@
   }
 
   .section-title {
-    @apply text-[1rem] text-center mb-6;
+    @apply text-center mb-6;
   }
 
   .footer {
