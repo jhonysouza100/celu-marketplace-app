@@ -30,11 +30,11 @@
   }
 
   .section {
-    @apply pt-20 pb-4 lg:pt-28 lg:pb-8 border border-yellow-400;
+    @apply pt-20 pb-4 lg:pt-28 lg:pb-8 border;
   }
 
   .section-container {
-    @apply w-full mx-6 xl:mx-auto max-w-screen-lg px-6 border border-red-500;
+    @apply container px-6 xl:px-0 max-w-screen-xl xl:mx-auto;
   }
 
   .section-title {
@@ -42,7 +42,7 @@
   }
 
   .footer {
-    @apply py-8 lg:pb-12;
+    @apply py-8 overflow-hidden lg:pb-12;
   }
 
   .box-shadow {

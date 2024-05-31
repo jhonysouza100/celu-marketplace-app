@@ -11,9 +11,11 @@ export default function Footer() {
 
   return (
     <footer className="footer">
-      <div className="footer-container section-container grid grid-cols-1 md:grid-cols-3 gap-6 gap-y-16">
+      <div className="footer-container section-container px-4 sm:px-6 grid grid-cols-1 md:grid-cols-3 gap-6 gap-y-16 md:justify-between">
         
-        <div className="footer-logo inline-flex text-xl col-span-1 lg:text-2xl font-semibold text-main">{text.sectionTitle}</div>
+        <div className="footer-logo inline-flex text-xl col-span-1 lg:text-2xl font-semibold text-main">
+          <a href="#">{text.sectionTitle}</a>
+        </div>
 
         <div className="footer-data grid grid-cols-2 md:grid-cols-3 col-span-1 md:col-span-2 gap-6 gap-y-16 sm:gap-x-12 md:gap-x-16 xl:gap-x-24">
 
