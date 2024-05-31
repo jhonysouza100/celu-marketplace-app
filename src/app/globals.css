@@ -41,10 +41,6 @@
     @apply text-center mb-6;
   }
 
-  .footer {
-    @apply py-8 overflow-hidden lg:pb-12;
-  }
-
   .box-shadow {
     box-shadow:  0 12px 32px hsla(23, -100%, -50%, .12);
   }
