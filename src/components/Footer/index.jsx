@@ -11,9 +11,9 @@ export default function Footer() {
 
   return (
     <footer className="footer">
-      <div className="footer-container container grid grid-cols-1 md:grid-cols-3 gap-6 gap-y-16">
+      <div className="footer-container section-container grid grid-cols-1 md:grid-cols-3 gap-6 gap-y-16">
         
-        <div className="footer-logo inline-flex text-xl col-span-1 lg:text-2xl font-semibold main-color">{text.sectionTitle}</div>
+        <div className="footer-logo inline-flex text-xl col-span-1 lg:text-2xl font-semibold text-main">{text.sectionTitle}</div>
 
         <div className="footer-data grid grid-cols-2 md:grid-cols-3 col-span-1 md:col-span-2 gap-6 gap-y-16 sm:gap-x-12 md:gap-x-16 xl:gap-x-24">
 
@@ -21,9 +21,9 @@ export default function Footer() {
           <div className='col-span-1'>
             <h3 className="footer-title text-base lg:text-xl mb-4">{text.columnTitle1}</h3>
             <ul className="footer-links grid gap-y-3">
-              <li className='footer-link flex items-center justify-start transition-colors duration-300 hover:main-color'><Link href={'/celulares'} aria-label="Ir a la página de Celulares">{text.columnText1}</Link></li>
-              <li className="footer-link flex items-center justify-start transition-colors duration-300 hover:main-color"><Link href={'/informatica'} aria-label="Ir a la página de Informática">{text.columnText2}</Link></li>
-              <li className="footer-link flex items-center justify-start transition-colors duration-300 hover:main-color"><Link href={'/accesorios'} aria-label="Ir a la página de Accesorios">{text.columnText3}</Link></li>
+              <li className='footer-link flex items-center justify-start transition-colors duration-300 hover:text-main'><Link href={'/celulares'} aria-label="Ir a la página de Celulares">{text.columnText1}</Link></li>
+              <li className="footer-link flex items-center justify-start transition-colors duration-300 hover:text-main"><Link href={'/informatica'} aria-label="Ir a la página de Informática">{text.columnText2}</Link></li>
+              <li className="footer-link flex items-center justify-start transition-colors duration-300 hover:text-main"><Link href={'/accesorios'} aria-label="Ir a la página de Accesorios">{text.columnText3}</Link></li>
             </ul>
           </div>
 
@@ -31,9 +31,9 @@ export default function Footer() {
           <div className='col-span-1'>
             <h3 className="footer-title text-base lg:text-xl mb-4">{text.columnTitle2}</h3>
             <ul className="footer-links grid gap-y-3">
-              <li className="footer-link inline-flex items-center justify-start transition-colors duration-300 hover:main-color space-x-1"><RiWhatsappLine /><a href={link.whatsapp} aria-label="Enviar mensaje por WhatsApp">{text.columnText4}</a></li>
-              <li className="footer-link flex items-center justify-start transition-colors duration-300 hover:main-color space-x-1"><RiMailLine /><a href={link.email} aria-label="Enviar correo electrónico">{text.columnText5}</a></li>
-              <li className="footer-link flex items-center justify-start transition-colors duration-300 hover:main-color space-x-1"><RiMapPinLine /><a href={link.maps} aria-label="Ver ubicación en mapa">{text.columnText6}</a></li>
+              <li className="footer-link inline-flex items-center justify-start transition-colors duration-300 hover:text-main space-x-1"><RiWhatsappLine /><a href={link.whatsapp} aria-label="Enviar mensaje por WhatsApp">{text.columnText4}</a></li>
+              <li className="footer-link flex items-center justify-start transition-colors duration-300 hover:text-main space-x-1"><RiMailLine /><a href={link.email} aria-label="Enviar correo electrónico">{text.columnText5}</a></li>
+              <li className="footer-link flex items-center justify-start transition-colors duration-300 hover:text-main space-x-1"><RiMapPinLine /><a href={link.maps} aria-label="Ver ubicación en mapa">{text.columnText6}</a></li>
             </ul>
           </div>
 
@@ -45,8 +45,8 @@ export default function Footer() {
 
             {/* SOCIAL */}
             <div className="footer-social flex justify-center gap-x-4 sm:justify-start lg:gap-x-6">
-              <a className="footer-social-link title-color text-xl xl:text-2xl transition-colors duration-300 hover:main-color" aria-label="Perfil de Instagram" href={link.instagram}><RiInstagramFill /></a>
-              <a className="footer-social-link title-color text-xl xl:text-2xl transition-colors duration-300 hover:main-color" aria-label="Perfil de Facebook" href={link.facebook}><RiFacebookCircleFill /></a>
+              <a className="footer-social-link text-primary text-xl xl:text-2xl transition-colors duration-300 hover:text-main" aria-label="Perfil de Instagram" href={link.instagram}><RiInstagramFill /></a>
+              <a className="footer-social-link text-primary text-xl xl:text-2xl transition-colors duration-300 hover:text-main" aria-label="Perfil de Facebook" href={link.facebook}><RiFacebookCircleFill /></a>
             </div>
           </div>
 

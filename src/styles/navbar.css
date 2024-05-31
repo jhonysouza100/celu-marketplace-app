@@ -17,14 +17,14 @@
 .nav-logo {
   font-size: var(--h2-font-size);
   font-weight: --font-semi-bold;
-  color: var(--main-color);
+  color: var(--text-main);
 }
 
 .nav-close,
 .nav-toggle {
   display: flex;
   font-size: 1.5rem;
-  color: var(--title-color);
+  color: var(--text-primary);
   cursor: pointer;
 }
 
@@ -36,12 +36,12 @@
 }
 
 .nav-link {
-  color: var(--text-color);
+  color: var(--text-secondary);
   font-weight: var(--font-medium);
   transition: color .4s;
 }
 .nav-link:hover {
-  color: var(--main-color);
+  color: var(--text-main);
 }
 
 .nav-close {
@@ -71,5 +71,5 @@
 
 /* Active link */
 .active-link {
-  color: var(--main-color);
+  color: var(--text-main);
 }

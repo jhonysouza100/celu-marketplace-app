@@ -1,6 +1,6 @@
 import { Poppins } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
+// import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 const inter = Poppins({ subsets: ["latin"],  weight: ["400", "500", "600"] });
@@ -17,7 +17,7 @@ const pages = [
 export default function RootLayout({ children }) {
   return (
     <html className="scroll-smooth" lang="es">
-      <body className={`${inter.className} body-color text-color text-sm xl:text-base select-none p-4`}>
+      <body className={`${inter.className} bg-body text-secondary text-sm xl:text-base select-none`}>
         {/* <Navbar pages={pages} /> */}
         <main className="main overflow-hidden">{children}</main>
         <Footer />

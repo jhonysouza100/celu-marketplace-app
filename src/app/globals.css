@@ -17,36 +17,8 @@
 
 @layer components {
 
-  .main-color {
-    color: hsl(23, 100%, 50%);
-  }
-
-  .bg-gradient {
-    background: linear-gradient(
-      90deg,
-      hsl(23, 4%, 28%) 0%,
-      hsl(23, 4%, 8%) 100%
-    );
-  }
-
   h1, h2, h3, h4 {
     @apply text-white font-semibold;
-  }
-
-  .title-color {
-    @apply text-white;
-  }
-
-  .text-color {
-    @apply text-neutral-400;
-  }
-
-  .body-color {
-    @apply bg-neutral-950;
-  }
-
-  .container-color {
-    @apply bg-neutral-800;
   }
 
   .placeholder-color {
@@ -57,12 +29,12 @@
     @apply block max-w-full h-auto;
   }
 
-  .container {
-    @apply mx-4 sm:mx-6 max-w-screen-lg xl:mx-auto;
+  .section {
+    @apply pt-20 pb-4 lg:pt-28 lg:pb-8 border border-yellow-400;
   }
 
-  .section {
-    @apply py-6 px-4 lg:py-28 lg:px-8;
+  .section-container {
+    @apply w-full mx-6 xl:mx-auto max-w-screen-lg px-6 border border-red-500;
   }
 
   .section-title {
@@ -78,7 +50,12 @@
   }
 
   .button {
-    @apply bg-gradient text-white py-3 px-6 rounded-full font-semibold inline-flex justify-center items-center gap-x-2 transition-shadow duration-300 hover:box-shadow;
+    @apply text-white py-3 px-6 rounded-full font-semibold inline-flex justify-center items-center gap-x-2 transition-shadow duration-300 hover:box-shadow;
+    background: linear-gradient(90deg, hsl(23, 4%, 28%) 0%, hsl(23, 4%, 8%) 100%); 
+  }
+  
+  .gradient-bg {
+    background: linear-gradient(90deg, hsl(23, 4%, 28%) 0%, hsl(23, 4%, 8%) 100%); 
   }
 
 }

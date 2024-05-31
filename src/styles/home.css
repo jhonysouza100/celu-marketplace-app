@@ -1,53 +1,53 @@
 .home-container {
-  position: relative;
-  padding-block: 7rem 1rem;
-  row-gap: 2.5rem;
+  /* position: relative; */
+  /* padding-block: 7rem 1rem; */
+  /* row-gap: 2.5rem; */
 }
 
 .home-content {
-  position: relative;
-  display: grid;
-  justify-self: center;
+  /* position: relative; */
+  /* display: grid; */
+  /* justify-self: center; */
 }
 
 .home-img {
-  width: 220px;
+  /* width: 220px; */
 }
 
 .home-title {
-  font-size: var(--biggest-font-size);
-  display: flex;
-  column-gap: .25rem;
-  color: var(--main-color);
-  position: absolute;
-  top: -2rem;
-  justify-self: center;
+  /* font-size: var(--biggest-font-size); */
+  /* display: flex; */
+  /* column-gap: .25rem; */
+  /* color: var(--text-main); */
+  /* position: absolute; */
+  /* top: -2rem; */
+  /* justify-self: center; */
 }
 .home-title span:nth-child(2) {
-  z-index: -1;
+  /* z-index: -1; */
 }
 
 .home-tooltip {
-  position: absolute;
-  top: -.5rem;
-  right: 1.5rem;
+  /* position: absolute; */
+  /* top: -.5rem; */
+  /* right: 1.5rem; */
 }
 
 .home-tooltip-img {
-  width: 60px;
+  /* width: 60px; */
 }
 
 .home-tooltip-text {
-  background: var(--gradient-color);
-  padding: .25rem .75rem;
-  color: var(--title-color);
-  font-weight: var(--font-medium);
-  border-radius: 4rem;
-  position: absolute;
-  transform: translate(60px, -40px);
+  /* background: var(--gradient-color); */
+  /* padding: .25rem .75rem; */
+  /* color: var(--text-primary); */
+  /* font-weight: var(--font-medium); */
+  /* border-radius: 4rem; */
+  /* position: absolute; */
+  /* transform: translate(60px, -40px); */
   /* top: -50%;
   right: -100%; */
-  white-space: nowrap;
+  /* white-space: nowrap; */
 }
 
 .home-social {
@@ -69,7 +69,7 @@
   content: '';
   width: 48px;
   height: 1px;
-  background-color: var(--text-color);
+  background-color: var(--text-secondary);
   position: absolute;
   top: 0;
   bottom: 0;
@@ -84,13 +84,13 @@
 
 .home-social-link {
   font-size: 1.25rem;
-  color: var(--text-color);
+  color: var(--text-secondary);
   transition: color .4s;
 }
 .home-social-link:hover {
-  color: var(--main-color);
+  color: var(--text-main);
 }
 
 .home-button {
-  justify-self: center;
+  /* justify-self: center; */
 }

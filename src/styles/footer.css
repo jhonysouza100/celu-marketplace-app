@@ -10,7 +10,7 @@
 .footer-logo {
   /* font-size: var(--h2-font-size); */
   /* font-weight: var(--font-semi-bold); */
-  /* color: var(--main-color); */
+  /* color: var(--text-main); */
 }
 
 .footer-data {
@@ -35,12 +35,12 @@
 }
 
 .footer-link > * {
-  /* color: var(--text-color); */
+  /* color: var(--text-secondary); */
   /* margin-right: .25rem; */
   /* transition: color .4s; */
 }
 .footer-link:hover > * {
-  /* color: var(--main-color); */
+  /* color: var(--text-main); */
 }
 
 .footer-group {
@@ -65,17 +65,17 @@
   /* width: 100%; */
   /* padding: 1.15rem 1.25rem; */
   /* border-radius: 4rem; */
-  /* background-color: var(--container-color); */
-  /* color: var(--text-color); */
+  /* background-color: var(--bg-container); */
+  /* color: var(--text-secondary); */
 }
 
 .footer-input::placeholder {
-  /* color: var(--text-color); */
+  /* color: var(--text-secondary); */
 }
 
 .footer-input:-webkit-autofill {
-  /* background-color: var(--container-color) !important; Cambia el color de fondo */
-  /* color: var(--text-color) !important; Cambia el color del texto */
+  /* background-color: var(--bg-container) !important; Cambia el color de fondo */
+  /* color: var(--text-secondary) !important; Cambia el color del texto */
 }
 
 .footer-input-error {
@@ -99,12 +99,12 @@
 }
 
 .footer-social-link {
-  /* color: var(--title-color); */
+  /* color: var(--text-primary); */
   /* font-size: 1.25rem; */
   /* transition: color .4s; */
 }
 .footer-social-link:hover {
-  /* color: var(--main-color); */
+  /* color: var(--text-main); */
 }
 
 .footer-copyright {
@@ -112,5 +112,5 @@
   /* margin-top: 5rem; */
   /* font-size: var(--small-font-size); */
   /* text-align: center; */
-  /* color: var(--text-color); */
+  /* color: var(--text-secondary); */
 }

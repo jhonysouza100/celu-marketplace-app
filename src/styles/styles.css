@@ -1,14 +1,14 @@
 :root {
   --header-height: 3.5rem;
-  --main-color: hsl(23, 100%, 50%);
+  --text-main: hsl(23, 100%, 50%);
   --error-color: #dc2626;
   --gradient-color: linear-gradient(90deg,
                   hsl(23, 4%, 28%) 0%,
                   hsl(23, 4%, 8%) 100%);
-  --title-color: hsl(0, 0%, 100%);
-  --text-color: rgb(157, 152, 149);
-  --body-color: rgb(11, 10, 9);
-  --container-color: rgb(27, 25, 24);
+  --text-primary: hsl(0, 0%, 100%);
+  --text-secondary: rgb(157, 152, 149);
+  --bg-body: rgb(11, 10, 9);
+  --bg-container: rgb(27, 25, 24);
   --body-font: "Poppins", sans-serif;
   --biggest-font-size: 10rem;
   --h1-font-size: 1.5rem;
@@ -49,12 +49,12 @@ html {
 body {
   /* font-family: var(--body-font); */
   /* font-size: var(--normal-font-size); */
-  /* background-color: var(--body-color); */
-  /* color: var(--text-color); */
+  /* background-color: var(--bg-body); */
+  /* color: var(--text-secondary); */
   /* user-select: none; */
 }
 h1, h2, h3, h4 {
-  /* color: var(--title-color);
+  /* color: var(--text-primary);
   font-weight: var(--font-semi-bold); */
 }
 ul {
@@ -95,7 +95,7 @@ img {
   /* background: var(--gradient-color); */
   /* padding: .75rem 1.5rem; */
   /* border-radius: 4rem; */
-  /* color: var(--title-color); */
+  /* color: var(--text-primary); */
   /* font-weight: var(--font-semi-blod); */
   /* display: inline-flex; */
   /* justify-content: center; */
@@ -109,7 +109,7 @@ img {
 .button i {
   /* font-size: 2rem; */
   /* font-weight: initial; */
-  /* color: var(--main-color); */
+  /* color: var(--text-main); */
 }
 .scrollup {
   position: fixed;
@@ -117,7 +117,7 @@ img {
   bottom: -50%;
   background: var(--gradient-color);
   display: inline-flex;
-  color: var(--title-color);
+  color: var(--text-primary);
   font-size: 1.25rem;
   padding: 6px;
   border-radius: .25rem;

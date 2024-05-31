@@ -19,7 +19,7 @@
 .model-tooltip-text {
   background: var(--gradient-color);
   padding: .25rem .75rem;
-  color: var(--title-color);
+  color: var(--text-primary);
   font-weight: var(--font-medium);
   font-size: var(--small-font-size);
   border-radius: 4rem;
