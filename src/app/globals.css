@@ -38,7 +38,7 @@
   }
 
   .section-title {
-    @apply text-center mb-6;
+    @apply text-center mb-6 text-xl lg:text-4xl;
   }
 
   .box-shadow {
@@ -54,4 +54,19 @@
     background: linear-gradient(90deg, hsl(23, 4%, 28%) 0%, hsl(23, 4%, 8%) 100%); 
   }
 
+  .model-tooltip-text {
+    @apply gradient-bg text-xs sm:text-sm lg:text-base py-1 px-3 lg:py-2 lg:px-5 text-primary font-medium rounded-full absolute whitespace-nowrap;
+  }
+
+}
+
+/* ESTADOS */
+.swiper-slide-active,
+.swiper-slide-duplicate-active {
+  scale: 1;
+  filter: blur(0);
+}
+
+.scrollup.show {
+  bottom: 3rem;
 }

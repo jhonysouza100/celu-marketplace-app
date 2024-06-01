@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Main() {
   return (
     <section className="home section" id="home">
-			<div className="home-container section-container grid gap-y-10 pt-28 pb-4 lg:relative">
+			<div className="home-container section-container grid gap-6 gap-y-10 pt-28 pb-4 lg:relative">
 				<div className="home-content relative grid justify-self-center">
 					<Image className="home-img sm:w-[220px] md:w-[320px] lg:w-[500px]" width={180} height={180} src='/img/home-img.png' alt="home image"  />
 					<h1 className="home-title text-9xl md:text-[16rem] lg:text-[25rem] flex gap-x-1 lg:gap-x-4 text-main absolute justify-self-center">
