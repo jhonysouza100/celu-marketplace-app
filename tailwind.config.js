@@ -23,6 +23,7 @@ module.exports = {
         'container': 'rgb(38, 38, 38)',
         'primary': 'rgb(255, 255, 255)',
         'secondary': 'rgb(163, 163, 163)',
+        'navmenu': 'hsla(23, 12%, 4%, .2)',
       },
       screens: {
         'talet': '900px'

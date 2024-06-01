@@ -1,15 +1,15 @@
 /* Navigation for mobile devices */
 @media screen and (max-width: 1150px) {
   .nav-menu {
-    position: fixed;
-    top: -100%; /* oculta el menu despleglable */
-    left: 0;
-    width: 100%;
-    padding-block: 5.5rem 4.5rem;
-    background-color: hsla(23, 12%, 4%, .2);
-    backdrop-filter: blur(32px);
-    -webkit-backdrop-filter: blur(32px);
-    transition: top .4s;
+    /* position: fixed; */
+    /* top: -100%; */
+    /* left: 0; */
+    /* width: 100%; */
+    /* padding-block: 5.5rem 4.5rem; */
+    /* background-color: hsla(23, 12%, 4%, .2); */
+    /* backdrop-filter: blur(32px); */
+    /* -webkit-backdrop-filter: blur(32px); */
+    /* transition: top .4s; */
   }
 }
 
@@ -17,14 +17,14 @@
 /* For large "LG" devices */
 @media screen and (min-width: 1150px) {
   .nav {
-    height: calc(var(--header-height) + 2rem);
+    /* height: calc(var(--header-height) + 2rem); */
   }
   .nav-toggle, .nav-close {
-    display: none;
+    /* display: none; */
   }
   .nav-list {
-    flex-direction: row;
-    column-gap: 4.5rem;
+    /* flex-direction: row; */
+    /* column-gap: 4.5rem; */
   }
   
 }
