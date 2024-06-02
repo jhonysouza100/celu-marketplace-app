@@ -74,11 +74,12 @@
   bottom: 3rem;
 }
 
-.nav-menu.open {
+.nav-menu.isopen {
+  padding-block: 5.5rem 4.5rem;
   top: 0;
 }
 
-.header.blur::after {
+.header.isblur::after {
   content: '';
   position: absolute;
   width: 100%;
