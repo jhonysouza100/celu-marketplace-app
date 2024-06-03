@@ -70,11 +70,11 @@
   filter: blur(0);
 }
 
-.scrollup.show {
+.scrollup.isshow {
   bottom: 3rem;
 }
 
-.nav-menu.isopen {
+.navmenu.isopen {
   padding-block: 5.5rem 4.5rem;
   top: 0;
 }
