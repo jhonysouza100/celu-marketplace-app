@@ -30,7 +30,7 @@
   }
 
   .section {
-    @apply pt-20 pb-4 lg:pt-28 lg:pb-8 border;
+    @apply pt-20 pb-4 lg:pt-28 lg:pb-8;
   }
 
   .section-container {

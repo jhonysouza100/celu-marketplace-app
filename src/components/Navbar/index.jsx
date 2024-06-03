@@ -16,7 +16,7 @@ export default function Navbar({pages}) {
 
   const scrollHeader = () => { 
     window.scrollY >= 50 ? isScroll.current = true : isScroll.current = false; 
-    updateHeaderBackground(); 
+    updateHeaderBackground();
     updateActiveSections(); 
   };
 
