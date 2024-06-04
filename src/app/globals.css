@@ -34,7 +34,7 @@
   }
 
   .section-container {
-    @apply container px-6 xl:px-0 max-w-screen-xl xl:mx-auto;
+    @apply container px-6 xl:px-20 xl:mx-auto max-w-screen-xl;
   }
 
   .section-title {
@@ -64,10 +64,12 @@
 }
 
 /* ESTADOS */
-.swiper-slide-active,
-.swiper-slide-duplicate-active {
-  scale: 1;
+.swiper-slide-active {
   filter: blur(0);
+}
+
+.swiper-slide-active img {
+  scale: 1 !important;
 }
 
 .scrollup.isshow {

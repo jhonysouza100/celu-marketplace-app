@@ -20,7 +20,7 @@ export default function Main() {
 				</div>
 				<a href="#" className="home-button button font-normal justify-self-center lg:absolute lg:bottom-[4.5rem]">Buy Now <RiPlayCircleFill className="ri-play-circle-fill text-main"/></a>
         {/* <!-- social component --> */}
-        <div className="home-social grid ml-4 sm:ml-6 justify-items-center gap-y-24 absolute top-56 left-[-1.5rem] md:top-0 md:bottom-0 md:place-content-center">
+        <div className="home-social grid ml-4 sm:ml-6 justify-items-center gap-y-24 absolute top-56 left-[-1.5rem] xl:left-[1.5rem] md:top-0 md:bottom-0 md:place-content-center">
            <span className="home-social-text relative rotate-90 text-sm font-medium lg:text-base after:content-[''] after:w-12 after:h-[1px] after:bg-secondary after:absolute after:top-0 after:bottom-0 after:right-[-64px] after:mt-auto after:mb-auto">Follow Us</span>
            <div className="home-social-links grid gap-y-6">
               <a href="#" target="_blank" className="home-social-link text-xl lg:text-2xl text-secondary transition-colors duration-300 hover:text-main"><RiInstagramFill className="ri-instagram-fill" /></a>
