@@ -53,16 +53,19 @@ export default function Navbar({pages}) {
   
   useEffect(() => {
     animations()
+  }, []);
+  
+  useEffect(() => {
     window.addEventListener("scroll", scrollHeader);
     return () => {
       // limpia el evento de desplazamiento cuando el componente se desmonta para evitar posibles problemas de memoria.
       window.removeEventListener("scroll", scrollHeader);
     };
-  }, []);
+  })
 
   return (
     <header className="header fixed w-full top-0 left-0 z-50 after:transition-all after:duration-300" id="header">
-      <nav className="nav section-container h-14 lg:h-[5.5rem] flex items-center justify-between">
+      <nav className="nav section-container lg:h-[5.5rem] flex items-center justify-between">
         <a href="#" className="nav-logo text-xl lg:text-2xl font-semibold text-main">JBL</a>
         <div className={`navmenu ${isMenuOpen && 'isopen'} fixed lg:static left-0 top-[-100%] lg:top-0 w-full lg:w-max transition-all duration-500 bg-navmenu backdrop-blur-xl lg:bg-inherit lg:backdrop-blur-none`}>
            <ul className="nav-list text-center flex flex-col lg:flex-row gap-x-[4.5rem] gap-y-10">
