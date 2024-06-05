@@ -14,9 +14,9 @@ export default function ScrollUp() {
 		window.addEventListener("scroll", scrollUp);
     return () => {
 			// limpia el evento de desplazamiento cuando el componente se desmonta para evitar posibles problemas de memoria.
-			window.addEventListener("scroll", scrollUp);
+			window.removeEventListener("scroll", scrollUp);
     };
-  });
+  }, []);
 
 
 	return (

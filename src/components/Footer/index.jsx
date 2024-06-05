@@ -7,8 +7,6 @@ import { RiFacebookCircleFill, RiInstagramFill, RiMailLine, RiMapPinLine, RiWhat
 
 export default function Footer() {
 
-  console.log('component FOOTER rendered')
-
   return (
     <footer className="footer py-8 overflow-hidden lg:pb-12">
       <div className="footer-container section-container px-4 sm:px-6 grid grid-cols-1 md:grid-cols-3 gap-6 gap-y-16 md:justify-between">

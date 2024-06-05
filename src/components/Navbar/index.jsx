@@ -58,7 +58,7 @@ export default function Navbar({pages}) {
       // limpia el evento de desplazamiento cuando el componente se desmonta para evitar posibles problemas de memoria.
       window.removeEventListener("scroll", scrollHeader);
     };
-  });
+  }, []);
 
   return (
     <header className="header fixed w-full top-0 left-0 z-50 after:transition-all after:duration-300" id="header">

@@ -1,8 +1,19 @@
 import { Poppins } from "next/font/google";
+import dynamic from "next/dynamic";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
-// import Footer from "@/components/Footer";
-import ScrollUp from "@/components/ScrollUp";
+
+const Navbar = dynamic(() => import("@/components/Navbar"), {
+  ssr: false,
+})
+
+const ScrollUp = dynamic(() => import("@/components/ScrollUp"), {
+  ssr: false,
+})
+
+const Footer = dynamic(() => import("@/components/Footer"), {
+  ssr: false,
+  loading: () => <p>Loading...</p>,
+})
 
 const inter = Poppins({ subsets: ["latin"],  weight: ["400", "500", "600"] });
 
@@ -21,7 +32,7 @@ export default function RootLayout({ children }) {
       <body className={`${inter.className} bg-body text-secondary text-sm xl:text-base select-none`}>
         <Navbar pages={pages} />
         <main className="main overflow-hidden">{children}</main>
-        {/* <Footer /> */}
+        <Footer />
         <ScrollUp />
       </body>
     </html>

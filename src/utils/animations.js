@@ -7,7 +7,6 @@ const scrollAnimation = () => {
     distance: '60px', // Reducido para que la animación comience antes de que el elemento esté completamente visible
     duration: 2500, // Reducido el tiempo de animación para hacerlo más rápido
     delay: 400, // Añadido un pequeño retraso para un mejor efecto
-    easing: 'cubic-bezier(0.5, 0, 0, 1)', // Cambiado a una curva de aceleración para hacer la animación más natural
     reset: false // Reiniciar la animación en cada desplazamiento
   });
 
