@@ -20,6 +20,6 @@ export default function ScrollUp() {
 
 
 	return (
-		<a href="#" className={`scrollup ${isSCroll && 'isshow'} fixed right-4 bottom-[-50%] gradient-bg inline-flex text-primary text-xl p-1 rounded z-50 transition-all duration-300 hover:translate-y-[-0.5rem] lg:right-12`}><RiArrowUpSLine className="ri-arrow-up-s-line" /></a >
+		<a href="#" className={`scrollup ${isSCroll && 'isshow'} fixed right-4 bottom-[-50%] gradient-bg inline-flex text-primary text-xl p-1 rounded z-50 transition-all duration-300 hover:translate-y-[-0.5rem] lg:right-12`} aria-label="go to main"><RiArrowUpSLine className="ri-arrow-up-s-line" /></a >
 	)
 }
