@@ -20,7 +20,7 @@ module.exports = {
       colors: {
         'main': 'hsl(23, 100%, 50%)',
         'body': 'rgb(10, 10, 10)',
-        'container': 'rgb(38, 38, 38)',
+        'container': 'hsl(23, 4%, 10%)',
         'primary': 'rgb(255, 255, 255)',
         'secondary': 'rgb(163, 163, 163)',
         'navmenu': 'hsla(23, 12%, 4%, .2)',
