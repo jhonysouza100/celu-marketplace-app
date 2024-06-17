@@ -8,9 +8,11 @@ export default function Footer() {
   return (
     <footer className="footer overflow-hidden py-8">
         <div className="footer-container section-container grid gap-y-16">
-           <div>
-              <a href="#" className="footer-logo text-xl lg:text-2xl font-semibold text-main">{text.sectionTitle}</a>
+
+           <div className="footer-logo text-xl lg:text-2xl font-semibold text-main">
+              <a href="#">{text.sectionTitle}</a>
            </div>
+
            <div className="footer-data grid grid-cols-2 gap-y-16">
               <div>
                 <h3 className="footer-title text-base lg:text-xl mb-4">{text.columnTitle1}</h3>
@@ -30,9 +32,9 @@ export default function Footer() {
               </div>
               <div className="footer-group col-start-1 col-end-3">
                {/* FORM ↓↓↓ */}
-               <form action="" className="footer-form">
-                  <input type="email" className="footer-input" placeholder="Email" />
-                  <button className="footer-button button">Subscribe <RiSendPlaneLine className="ri-send-plane-line" /></button>
+               <form action="" className="footer-form grid gap-y-4 mb-8">
+                  <input type="email" className="footer-input border-none outline-none w-full py-5 px-5 rounded-full bg-container" placeholder="Email" />
+                  <button className="footer-button button cursor-pointer">Subscribe <RiSendPlaneLine className="ri-send-plane-line text-main" /></button>
                </form>
                {/* ↑↑↑ FORM */}
            
