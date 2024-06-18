@@ -12,7 +12,7 @@ const ScrollUp = dynamic(() => import("@/components/ScrollUp"), {
 
 const Footer = dynamic(() => import("@/components/Footer"), {
   ssr: false,
-  loading: () => <p>Loading...</p>,
+  loading: () => <p className="m-auto">Loading...</p>,
 })
 
 const inter = Poppins({ subsets: ["latin"],  weight: ["400", "500", "600"] });
