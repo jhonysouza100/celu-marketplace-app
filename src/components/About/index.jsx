@@ -10,7 +10,7 @@ export default function About() {
              <p className="about-description mb-10 lg:mt-14">Enjoy award-winning JBL sound with wireless listening freedom and a sleek, streamlined design with comfortable cushioned earcups that deliver premium playback for the user.</p>
              <a href="#" className="button font-normal">Know More <RiInformationFill className="ri-information-fill text-main" /></a>
           </div>
-          <Image src="/img/about-img.png" width={280} height={280} className="about-img justify-self-center md:justify-self-start lg:w-[500px]" alt="about image" />
+          <Image src="/img/about-img.png" width={280} height={280} className="about-img justify-self-center md:justify-self-start lg:w-[500px]" alt="about image" quality={100} />
        </div>
     </section>
   );

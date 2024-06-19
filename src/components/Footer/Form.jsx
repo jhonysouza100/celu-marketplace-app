@@ -8,6 +8,8 @@ import config from '@/config';
 import { Toaster, toast } from "sonner";
 
 export default function Form() {
+
+  console.log(config.EMAIL_BACKEND_URL)
     
   // ZOD
   const validations = z.object({
